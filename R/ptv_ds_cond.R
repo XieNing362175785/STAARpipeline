@@ -282,7 +282,7 @@ ptv_ds_cond <- function(chr,gene_name,genofile,obj_nullmodel,genes,known_loci,
 	if(!is.null(results))
 	{
 		colnames(results) <- colnames(results, do.NULL = FALSE, prefix = "col")
-		colnames(results)[1:4] <- c("Gene name","Chr","Category","#SNV","cMAC")
+		colnames(results)[1:5] <- c("Gene name","Chr","Category","#SNV","cMAC")
 		colnames(results)[(dim(results)[2]-1):dim(results)[2]] <- c("ACAT-O","STAAR-O")
 	}
 
